@@ -112,3 +112,60 @@ tl3.to(".mid",{
     from:'center'
   }
 })
+
+
+
+let tl4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section5",
+    start: 'top 80%',
+    end: '70% 80%',
+    scrub:true,
+    markers:false
+  }
+})
+
+// tl4.to(".t_img",{
+//   opacity:1,
+//   scale:1
+// })
+tl4.fromTo(".t_img",{
+  opacity:.1,
+  scale:.4
+},{
+opacity:1,
+  scale:1
+})
+
+tl4.fromTo(".one",{
+  opacity:0
+},{
+  opacity:1
+})
+tl4.fromTo(".three",{
+  opacity:0
+},{
+  opacity:1
+})
+tl4.fromTo(".five",{
+  opacity:0
+},{
+  opacity:1
+})
+
+tl4.fromTo(".two",{
+  y:300,
+  opacity:0
+},{
+  y:0,
+  stagger:.5,
+  opacity:1
+})
+tl4.fromTo(".four",{
+  y:300,
+  opacity:0
+},{
+  y:0,
+  stagger:.5,
+  opacity:1
+})

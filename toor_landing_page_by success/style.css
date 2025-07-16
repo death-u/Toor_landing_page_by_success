@@ -557,9 +557,102 @@ color: #fff;
 
 .section5{
   height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
 }
 .sec5_main_content{
   height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between
+}
+.sec5_main_content .sec5_img{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: all .5;
+}
+.sec5_img figure{
+  height: 80%;
+  transition: all .5;
+}
+.sec5_img figure img{
+  height: 100%;
   width: 100%;
-  background-color: red;
+  object-fit: cover;
+  transition: all .5;
+}
+.sec5_main_content .sec5_side{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.side{
+  width: 100%;
+  height: 13%;
+}
+
+.side1 .one{
+  color: #000;
+  font-size: 3em;
+  font-weight: 600;
+}
+.two{
+  color: #797979;
+  margin-left: 20px;
+  font-size: 11px;
+  width: 50%;
+}
+.side1{
+  display: flex;
+  align-items: center;
+}
+.side2{
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-size: 3em;
+  font-weight: 600;
+}
+.side3{
+  display: flex;
+  align-items: center;
+}
+.four{
+  color: #797979;
+  margin-left: 20px;
+  font-size: 11px;
+  width: 50%;
+}
+.five{
+    color: #000;
+  font-size: 3em;
+  font-weight: 600;
+}
+.sec5_img{
+  overflow: hidden;
+  transition: all 0.5;
+}
+.sec5_main_content .sec5_img figure img:hover{
+  scale:1.4 ;
+  transition: all 0.5;
+}
+.sec5_img figure{
+  overflow: hidden;
+  transition: all 0.5;
+}
+.t_img{
+  transition:0.5;
+}
+.sec5_main_content .sec5_img figure img{
+  transition: all .5s;
+  scale: 1;
+  opacity: 1;
 }
